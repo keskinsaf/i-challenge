@@ -8,11 +8,6 @@ MAX_SIZE = 500
 ALLOWED_ROWS = {3: True, 5: True, 7: True}
 
 
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
-
-
 @app.route('/<username>', methods=['GET'])
 def identicon_generator(username: str):
     if not username.endswith(".png"):
