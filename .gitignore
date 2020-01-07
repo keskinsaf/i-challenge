@@ -130,3 +130,6 @@ dmypy.json
 
 # JetBrains configs
 .idea
+
+# assignment related files
+Assignment.md
