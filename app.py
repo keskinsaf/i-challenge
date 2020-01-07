@@ -32,8 +32,6 @@ def identicon_generator(username: str):
         print("Size: {} is not allowed. Will be set to {}.".format(size, MAX_SIZE))
         size = MAX_SIZE
 
-    row = row if row in ALLOWED_ROWS else 5
-
     print("username: {}\t\t size: {}\t\t row: {}".format(username, size, row))
     hex_hash = create_hex_hash(username)
     identicon = generate_image_from_hash(hex_hash, size, row)
