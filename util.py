@@ -9,7 +9,7 @@ def create_hex_hash(username: str):
     return hashed.hexdigest()
 
 
-# impressed by from https://stackoverflow.com/a/312464/6013366
+# impressed by https://stackoverflow.com/a/312464/6013366
 def chunks(lst, n, limit=None):
     """Yield successive n-sized chunks from lst."""
     for i in range(0, limit if limit is not None else len(lst), n):
