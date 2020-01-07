@@ -84,20 +84,13 @@ After that, you can follow steps at
     ```
 3. Install Flask, Pillow and uwsgi
     ```shell script
-   $ pip3 install Flask && pip3 install Pillow && pip3 install uwsgi 
+    pip3 install Flask && pip3 install Pillow 
     ```
-4.
-    1. Run api in Development mode
+4. Run api in Development mode
         ```shell script
-        $ flask run
+        export FLASK_APP=app.py
+        flask run
         ```
-    2. Run api in Deployment mode
-        ```shell script
-        $ uwsgi --http :5000 --wsgi-disable-file-wrapper \
-           -s /tmp/i-challenge.sock --manage-script-name \
-           --mount /=app:app
-        ```
-
 ## Testing
 
 In order to test that api, get request should be sent to specified url & port 
